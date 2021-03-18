@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#createform{
+   width:700px;
+   height:100px;
+   margin:100px auto;
+}
+
+#title{
+   color : blue;
+   text-align : right;
+}
+#createform .menu{
+   border:solid 3px black;
+   width:700px;
+   height:30px;
+   line-height:20px;
+}
+#id{
+   border-right: solid 3px black;
+   width:130px;
+   height:30px;
+   float:left;
+   line-height:30px;
+   text-align:center;
+}
+#text{
+   border-right: solid 3px black;
+   width:130px;
+   height:200px;
+   float:left;
+   line-height:30px;
+   text-align:center;
+}
+
+#createform .content{
+   border:solid 3px black;
+   width:700px;
+   height:200px;
+   line-height:20px;
+}

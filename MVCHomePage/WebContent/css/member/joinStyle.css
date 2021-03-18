@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+#joinform {
+	width:700px;
+	height: 100px;
+	margin: 100px auto;
+}
+
+#joinform .menu {
+	
+	border: solid 3px black;
+	width: 700px;
+	height: 30px;
+	display: block;
+	line-height: 20px;
+	text-indent: 5px;
+}
+
+#id {
+	border-right: solid 3px black;
+	width: 120px;
+	height: 30px;
+	float: left;
+	line-height: 30px;	
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="button"]{
+	margin-top: 5px;	
+}
+.checkInfo:focus {
+	background-color: yellow;
+}
