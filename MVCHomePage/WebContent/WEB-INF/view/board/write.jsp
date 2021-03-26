@@ -11,7 +11,8 @@
 <script type="text/javascript" src="${root}/javascript/board/board.js"></script>
 </head>
 <body>
-	<form id="createform" name="createform" action="${root}/board/writeOk.do" method="post" onsubmit="return boardCheck(this)">
+	<form id="createform" name="createform" 
+	action="${root}/board/writeOk.do" method="post" onsubmit="return boardCheck(this)">
 		<div id="title">글 목록</div>
 		<div class="menu" style="border-bottom-width: 0px;">
 			<input type="hidden" name="boardNumber" value="${boardNumber}">

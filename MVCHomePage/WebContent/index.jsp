@@ -25,5 +25,13 @@
 		<br><br>
 		<a href="${root}/board/write.do">게시판 글쓰기</a>
 		<a href="${root}/board/list.do">게시판 목록</a>
+		
+		<br><br>
+		<a href="${root}/fileboard/write.do">파일게시판 글쓰기</a>
+		<a href="${root}/fileboard/list.do">파일게시판 목록</a>
+		
+		<h3>카카오맵</h3>
+		<a href="${root}/map.do">카카오 맵</a>
+		<a href="${root}/addr.do">카카오 맵</a>
 </body>
 </html>

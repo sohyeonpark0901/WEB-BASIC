@@ -1,5 +1,6 @@
 package com.java.board.command;
 
+import java.sql.Connection;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,6 +17,7 @@ public class WriteOkCommand implements Command{
 		request.setCharacterEncoding("utf-8");
 		
 		BoardDto boardDto = new BoardDto();
+		Connection conn =null;
 		
 		boardDto.setBoardNumber(Integer.parseInt(request.getParameter("boardNumber")));
 		boardDto.setGroupNumber(Integer.parseInt(request.getParameter("groupNumber")));
@@ -28,6 +30,7 @@ public class WriteOkCommand implements Command{
 		boardDto.setContent(request.getParameter("content"));
 		boardDto.setPassword(request.getParameter("password"));
 		boardDto.setWriteDate(new Date());
+		
 		
 		int check = BoardDao.getInstance().insert(boardDto);
 		request.setAttribute("check", check);

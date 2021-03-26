@@ -12,8 +12,56 @@ public class BoardDto {
 	
 	private Date writeDate;
 	private int readCount;
+	
+	private long fileSize;
+	private String fileName;
+	private String path;
+	public long getFileSize() {
+		return fileSize;
+	}
+
+
+	public void setFileSize(long fileSize) {
+		this.fileSize = fileSize;
+	}
+
+
+	public String getFileName() {
+		return fileName;
+	}
+
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+
+	public String getPath() {
+		return path;
+	}
+
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+
+
+
+
+	@Override
+	public String toString() {
+		return "BoardDto [boardNumber=" + boardNumber + ", writer=" + writer + ", subject=" + subject + ", email="
+				+ email + ", content=" + content + ", password=" + password + ", writeDate=" + writeDate
+				+ ", readCount=" + readCount + ", fileSize=" + fileSize + ", fileName=" + fileName + ", path=" + path
+				+ ", groupNumber=" + groupNumber + ", sequenceNumber=" + sequenceNumber + ", sequenceLevel="
+				+ sequenceLevel + "]";
+	}
+
+
 	public BoardDto(int boardNumber, String writer, String subject, String email, String content, String password,
-			Date writeDate, int readCount, int groupNumber, int sequenceNumber, int sequenceLevel) {
+			Date writeDate, int readCount, long fileSize, String fileName, String path, int groupNumber,
+			int sequenceNumber, int sequenceLevel) {
 		super();
 		this.boardNumber = boardNumber;
 		this.writer = writer;
@@ -23,6 +71,9 @@ public class BoardDto {
 		this.password = password;
 		this.writeDate = writeDate;
 		this.readCount = readCount;
+		this.fileSize = fileSize;
+		this.fileName = fileName;
+		this.path = path;
 		this.groupNumber = groupNumber;
 		this.sequenceNumber = sequenceNumber;
 		this.sequenceLevel = sequenceLevel;
@@ -51,13 +102,7 @@ public class BoardDto {
 
 	
 	
-	@Override
-	public String toString() {
-		return "BoardDto [boardNumber=" + boardNumber + ", writer=" + writer + ", subject=" + subject + ", email="
-				+ email + ", content=" + content + ", password=" + password + ", writeDate=" + writeDate
-				+ ", readCount=" + readCount + ", groupNumber=" + groupNumber + ", sequenceNumber=" + sequenceNumber
-				+ ", sequenceLevel=" + sequenceLevel + "]";
-	}
+	
 
 
 	public int getBoardNumber() {
