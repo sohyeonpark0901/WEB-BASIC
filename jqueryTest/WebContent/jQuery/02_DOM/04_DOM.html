@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style type="text/css">
+	img{
+		width:250px;
+		height:200px;
+		margin:5px;
+	}
+
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+	$("img").click(function(){
+		$(".img_nature").prepend($("img:last"));
+		
+		
+	})
+	
+
+
+});
+</script>
+<body>
+	<div class="img_nature">
+		<img src="../nature1.PNG">
+		<img src="../nature2.PNG">
+		<img src="../nature3.PNG">
+	</div>
+</body>
+</html>

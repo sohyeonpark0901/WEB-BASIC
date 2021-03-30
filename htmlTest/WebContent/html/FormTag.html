@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Form 제어</h2>
+	<form action ="FormTag.html" method="get">
+	<ul>
+		<li>
+			<label>아이디</label>
+			<input type="text" id="userId" name="userId">
+		</li>
+		<li>
+			<label>비밀번호</label>
+			<input type="hidden" name ="1111" id ="userPassword" value="1234"></input> 
+			<input type="password" id="userPassword" name="1111">
+		</li>
+		<li>
+			<input type="submit" value="로그인"></input>
+		</li>
+	</ul>
+	<h3>input-type</h3>
+	<input type="text" name="id" size="5" maxlength="7">
+	</form>
+	
+	<h3>당신이 좋아하는 과일은?</h3>
+	<input type="checkbox" name="fruit" value="사과">망고
+	<input type="checkbox" name="fruit" value="사과">딸기
+	<input type="checkbox" name="fruit" value="사과">수박
+	<input type="checkbox" name="fruit" value="사과">멜론
+	<h3>search,mail,tel, URL</h3>
+	<input type="search" id="search">
+	<input type="email" id="email">
+	<input type="tel" id="tel">
+	<input type="url" id="url">
+	
+	<h3>number</h3>
+	<input type="number" id="number" min="1" max="5" value="2">
+	
+	<h3>range</h3>
+	<input type="range" min="0" max="10">
+	
+	<h3>file,date,color,button,hidden</h3>
+	<input type="file" name="Download">
+	<input type="date">
+	<input type="color">
+	<input type="button">일반 버튼
+	<input type="submit">제출 버튼
+	<input type="reset">리셋 버튼
+	<input type="hidden" id="hidden"name="hidden">
+	
+</body>
+</html>

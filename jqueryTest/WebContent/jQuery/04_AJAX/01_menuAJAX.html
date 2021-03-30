@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#menu1").click(function(){
+			$.ajax({
+				url:"01_menu.html",
+				type:"GET",
+				dataType: "html",
+				success: function(data){
+					$('#message1').html(data);
+				}
+			})
+		});
+		$("#menu2").click(function(){
+			$.ajax({
+				url:"01_menu.html",
+				type:"GET",
+				dataType: "html",
+				success: function(data){
+					$("#message2").html($(data).children("ul>li"));
+				}
+			})
+		});
+		
+	})
+</script>
+</head>
+<body>
+	<div>
+		<a href="#" id="menu1">메뉴보기</a>
+		<span id="message1"></span>
+	</div>
+	<div>
+		<a href="#" id="menu2">메뉴보기2</a>
+		<span id="message2" style="color:red;"></span>
+	</div>
+</body>
+</html>

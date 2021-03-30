@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$.ajax({
+		url:"01_XML.xml",
+		type:"GET",
+		dataType:"xml",
+		success:function(data){
+			var studentList = $(data).find('student');
+			$(studentList).each(function(i){
+				var student = studentList.eq(i);
+				var html="<span>"+student.children("stdNumber").text()+"</span> &nbsp;&nbsp;";
+				html+="<span>"+student.children("stdName").text()+"</span> &nbsp;&nbsp;";
+				html+="<span>"+student.children("score").text()+"</span> &nbsp;&nbsp;";
+				
+				$("#resultDisplay").append(html);
+			})
+		}
+	
+	});
+})
+</script>
+</head>
+<body>
+	<div id="resultDisplay"></div>
+</body>
+</html>

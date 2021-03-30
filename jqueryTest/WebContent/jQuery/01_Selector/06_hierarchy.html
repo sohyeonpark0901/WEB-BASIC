@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	label{
+		font-size:20px;
+		background-color:#EEEEEE;
+		padding:10px;
+	}
+	
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("p label").css("background-color","red")
+		$("p>label").css("background-color","yellow")
+	})
+</script>
+</head>
+<body>
+	<p>
+		<label>ONE</label>
+		<label>TWO</label>
+		<span>
+			<label>THREE</label>
+		</span>
+		
+	</p>
+</body>
+</html>

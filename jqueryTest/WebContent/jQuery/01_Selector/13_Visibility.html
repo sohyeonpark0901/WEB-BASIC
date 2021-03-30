@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width:50px;
+		height:40px;
+		margin:5px;
+		border:3px outset green;
+		float:left;
+	}
+	.div_hidden{
+		display:none;
+	}
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+//1.코드상으로 존재하지만 화면에 보이지 않게 할 때 
+//display:none;, type(hidden), width:height(0)
+$(document).ready(function(){
+	$("#btn").click(function(){
+		//1초동안 천천히 보여지게 시간 설정
+		$("div:hidden").show(1000);
+		
+	});
+	$("div:visible").click(function(){
+		$(this).css("background","yellow");
+	});
+})
+	
+</script>
+</head>
+
+
+<body>
+	<input type="button" id="btn" value="버튼클릭">
+	<div></div>
+	<div></div>
+	<div class="div_hidden"></div>
+	<div></div>
+	<div style="display:none;"></div>
+</body>
+</html>

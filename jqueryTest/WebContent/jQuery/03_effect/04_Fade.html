@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#fadeOut").click(function(){
+		$('img').fadeIn(3000);
+	})
+	$("#fadeIn").click(function(){
+		$('img').fadeOut(10000);
+	})
+})
+</script>
+</head>
+<body>
+	<img src="../nature1.PNG" width="500" height="500">
+	<br>
+	<button id="fadeOut">fadeOut</button>
+	<button id="fadeIn">fadeIn</button>
+</body>
+</html>

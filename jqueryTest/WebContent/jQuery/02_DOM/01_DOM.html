@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	var arr = new Array();
+	
+	var strHTML=$("#first > p").html();
+	var strText=$("#first > p").html();
+	
+	arr.push(strHTML);
+	arr.push(strText);
+	
+	$("#second").text(strText);
+	$("#third").html(strHTML);
+	
+})
+</script>
+</head>
+<body>
+	<div id="fruit">
+		안녕하세요<br>
+		<p>
+		KITRI 5강의장 보안개발 과정
+		총원 8명 결석 1명 현재원 7명 <br>
+		결석사유:개인사유
+		</p>
+		
+	</div>
+	<div id="second"></div>
+	<div id="third"></div>
+</body>
+</html>

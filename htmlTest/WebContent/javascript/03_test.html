@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	var score=100;
+	var a= parseInt(score/10);
+	var result=0;
+	
+	if(a==9 || a==10){
+		result="A";
+	}
+	else if(a==8){
+		result="B";
+	}
+	else if(a==7){
+		result="C";
+	}
+	else{
+		result="F";
+	}
+	if(a%10>=5 ||score==100){
+		result= result+"+";
+	}
+	
+	console.log(result);
+	
+</script>
+</body>
+</html>

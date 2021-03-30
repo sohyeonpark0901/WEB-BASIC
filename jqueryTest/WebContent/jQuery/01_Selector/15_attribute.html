@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body{
+		font-size:20px;
+	}
+	.spotlight{
+		background-color:#ff0;
+	}
+	.redtext{
+		color:red;
+	}
+	.bluetext{
+		color:blud;
+	}
+	.largetext{
+		font-size:50px;
+	}
+	.italctext{
+		font-style:italic;
+	}
+	.box{
+		border:3px solid red;
+	}
+	
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//속성을 selector로 받아올 때 []를사용
+		$("span[id]").addClass('spotlight');
+		$("span[id=simpletext1]").addClass('redtext');
+		$("span[id!=simpletext1]").addClass('bluetext');
+		
+		//해당 속성에서 시작부분이 ~~인 엘리먼트
+		$("span[id^=complex]").addClass('largetext');
+		//해당 속성에서 끝부분이 ~~인 엘리먼트
+		$("span[id$=text1]").addClass('italctext');
+		//해당속성에서 ~~를 포함하는 엘리먼트
+		$("span[id*=text]").addClass('box');
+		
+	})
+</script>
+</head>
+<body>
+	<span id="simpletext1">simpletext1</span>
+	<span class="simpletext2">simpletext2</span>
+	<span id="complextext1">simpletext1</span>
+	<span id="complextext2">simpletext2</span>
+	<span id="complex">complex</span>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){
+			var id=$('#id').val();
+			var password=$("#password").val();
+			var sendData = "id="+id+"&password="+password;
+			
+			$.ajax({
+				url:"03_idCheck.jsp?"+sendData,
+				type:"GET",
+				dataType:"text",
+				success: function(data){
+					$("#resultDisplay").text(data);
+				}
+			})
+		})
+	})
+</script>
+</head>
+<body>
+	<label>아이디</label>
+	<input type="text" name="id" id="id"><br>
+	
+	<label>비밀번호</label>
+	<input type="password" name="password" id="password"><br>
+	
+	<input type="button" id="btn" value="요청"><br>
+	<div id="resultDisplay"></div>
+</body>
+</html>

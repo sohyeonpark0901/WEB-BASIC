@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.item_hot{
+		width:300px;
+		background:#aaeeaa;
+		color:#404040;
+	}
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#content a:first").click(function(){
+			$(".item_1 > li:eq(2)").addClass("item_hot");
+			$(".item_2 > li:eq(0)").addClass("item_hot");
+			$(".item_3 > li:eq(1)").addClass("item_hot");
+		});
+		
+		$("#content a:last").click(function(){
+			$(".item_1 > li:eq(2)").removeClass("item_hot");
+			$(".item_2 > li:eq(0)").removeClass("item_hot");
+			$(".item_3 > li:eq(1)").removeClass("item_hot");
+			
+			//한번에 지우는법
+			//$(".item li").removeClass("item_hot");
+		});
+	})
+</script>
+</head>
+<body>
+	<div>
+		<ul id="content">
+			<li><a href="#">인기축제</a></li>
+			<li><a href="#">준비중인 축제</a></li>
+		</ul>
+	</div>
+	<h2>주요 지역별 축제 정보 안내</h2>
+	<ul class="item">
+		<li><b>서울밑 근교 지역</b>
+			<ul class="item_1">
+				<li>강화 고려산 진달래 축제</li>
+				<li>고양 국제 꽃 박람회</li>
+				<li>애버랜드 튤립축제</li>
+				<li>연천 전곡리 구석기 축제</li>
+			</ul>
+		</li>
+		<li><b>강원도</b>
+			<ul class="item_2">
+				<li>김유정 문학제</li>
+				<li>춘천 닭갈비 축제</li>
+			</ul>
+		</li>
+		<li><b>충청도</b>
+			<ul class="item_3">
+				<li>보령머드 축제</li>
+				<li>태안 축제</li>
+			</ul>
+		</li>
+		<li><b>전라도</b>
+			<ul class="item_4">
+				<li>진도 바닷길 축제</li>
+				<li>순천만 박람회</li>
+				<li>함평 나비 축제</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

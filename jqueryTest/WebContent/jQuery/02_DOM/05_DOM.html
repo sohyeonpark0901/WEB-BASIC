@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+//DOM : 생성 삭제 삽입 수정 (Document Object Model)
+$(function(){
+	$("#content a:first").click(function(){
+		$("h2").replaceWith("<p style='color:red;'>봄 여름 가을 축제 안내</p>")
+		$(".item_2 > li:eq(1)").remove();
+		$("<p style='color:blue;'>인천광역시</p>").replaceAll("b:eq(0)");
+	})	
+})
+</script>
+</head>
+<body>
+	<div>
+		<ul id="content">
+			<li><a href="#">엘리먼트 교체</a></li>
+			<li><a href="#">준비중인 축제</a></li>
+		</ul>
+	</div>
+	<h2>주요 지역별 축제 정보 안내</h2>
+	<ul class="item">
+		<li><b>서울밑 근교 지역</b>
+			<ul class="item_1">
+				<li>강화 고려산 진달래 축제</li>
+				<li>고양 국제 꽃 박람회</li>
+				<li>애버랜드 튤립축제</li>
+				<li>연천 전곡리 구석기 축제</li>
+			</ul>
+		</li>
+		<li><b>강원도</b>
+			<ul class="item_2">
+				<li>김유정 문학제</li>
+				<li>춘천 닭갈비 축제</li>
+			</ul>
+		</li>
+		<li><b>충청도</b>
+			<ul class="item_3">
+				<li>보령머드 축제</li>
+				<li>태안 축제</li>
+			</ul>
+		</li>
+		<li><b>전라도</b>
+			<ul class="item_4">
+				<li>진도 바닷길 축제</li>
+				<li>순천만 박람회</li>
+				<li>함평 나비 축제</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

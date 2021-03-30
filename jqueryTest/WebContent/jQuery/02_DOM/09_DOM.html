@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#main p:first").first().css("color","pink");
+	$("#main").children("div").first().css("color","blue");
+	$("#main p").children("p").last().css("color","red");
+	$("main p:eq(2)").css("color","yellow");
+	$("#main").children("p").eq(2).css("color","red");
+	$("#main").find("p").eq(0).css("color","green");
+});
+</script>
+
+</head>
+<body>
+	<div id="main">
+		<div class="middle">DIV</div>
+		<p>사과</p>
+		<p>바나나</p>
+		<p>딸기</p>
+		<p>멜론</p>
+		<div id="sub">
+			<p>아메리카노</p>
+		</div>
+	</div>
+</body>
+</html>

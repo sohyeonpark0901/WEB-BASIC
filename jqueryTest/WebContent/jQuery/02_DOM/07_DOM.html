@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	//바로 밑 동생을 받아오는 함수 : next()
+	$("#coffee").next().css("color","pink");
+	//바로 위 형
+	$("#coffee").prev().css("color","green");
+	
+	$("#strawberry").nextAll().css("color","red");
+	$("#strawberry").prevAll().css("color","blue");
+	
+	//모든 형제
+	$("#orange").siblings().css("color","yellow");
+	$("#orange").siblings("#tomato").css("fontSize","50px");
+})
+</script>
+</head>
+<body>
+	<h3>카라멜 마끼야또</h3>
+	<h3>아메리카노</h3>
+	<h3 id="coffee">바닐라 라떼</h3>
+	<h3>흑당버블 카페라떼</h3>
+	<h3>시크릿라떼</h3>
+	<br><br>
+	
+	<div id="first">
+		<div>사과</div>
+		<div>바나나</div>
+		<div id="strawberry">딸기</div>
+		<div>수박</div>
+		<div id="melon">메론</div>
+	</div>
+	<br><br>
+	
+	<div id="second">
+		<div>포도</div>
+		<div id="orange">귤</div>
+		<div>메론</div>
+		<div id="tomato">토메이토우</div>
+	</div>
+	<br><br>
+	
+</body>
+</html>

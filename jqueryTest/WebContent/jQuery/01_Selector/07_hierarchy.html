@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	label{
+		font-size:20px;
+		background-color:#EEEEEE;
+		
+	}
+	
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("div li").css("background-color","red")
+		$(".first>li").css("background-color","yellow")
+	})
+</script>
+</head>
+<body>
+	<p>관심물건을 선택하세요</p>
+	<div>
+		<ul class="first">
+			<li>건물매매</li>
+			<li>건물임대</li>
+			<li>입찰
+				<ul>
+					<li>경매</li>
+					<li>공매</li>
+				</ul>
+			</li>
+			<li>주택</li>
+			<li>공장</li>
+		</ul>
+	</div>
+</body>
+</html>

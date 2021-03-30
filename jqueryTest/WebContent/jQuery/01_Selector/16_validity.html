@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$("input[type=text]").val("값을 입력하세요");
+		$("input[type=text]").click(function(){
+			$(this).val("");
+		})
+		$("input[id='btn']").click(function(){
+			var arr= new Array();
+			var name = $("input[name='name']").val();
+			var id = $("input[name='id']").val();
+			var idType = $("#id").attr('type');
+			
+			arr.push(name);
+			arr.push(id);
+			arr.push(idType);
+			alert(arr);
+			
+			$('#id').attr("style","color:red");
+		})
+		
+		var div = $('div:eq(0)').text();
+		alert(div);
+		$('div:eq(1)').text("안녕하세요");
+})
+</script>
+</head>
+<body>
+	<div>hi</div>
+	<div></div>
+	<div></div>
+
+	<form action="#" method="post">
+		<label>이름</label>
+		<input type="text" id="name" name="name">
+		
+		<br><br>
+		<fieldset><!-- 컨트롤의 그룹화 -->
+			<legend>필수 입력 사항</legend> <!-- 그룹화의 이름 -->
+			<label>아이디</label>
+			<input type="text"  id="id" name="id">
+			<label>비밀번호</label>
+			<input type="password" id="password" name="password">
+			
+		</fieldset>
+		<br>
+		
+		<label>
+			E-Mail
+			<input type="text" id="email" name="email">
+		</label>
+		<br><br>
+		<input type="button" id="btn" value="입력">
+	</form>
+</body>
+</html>

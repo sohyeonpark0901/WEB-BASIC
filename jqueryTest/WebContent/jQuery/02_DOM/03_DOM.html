@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	img{
+		width:250px;
+		height:200px;
+		margin:5px;
+	}
+
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#btn").click(function(){
+		var random = Math.ceil(Math.random() * 3);
+		$(".img_nature").append("<img src='../nature"+random+".PNG' width='100' height='100'>")
+		
+	});
+})
+</script>
+</head>
+<body>
+	<a href="#" id="btn">클릭</a>
+	<div class="img_nature"></div>
+	
+</body>
+</html>

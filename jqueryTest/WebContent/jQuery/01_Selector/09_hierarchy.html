@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div,p{
+	width:100px;
+	height:80px;
+	float:left;
+	padding:10px;
+	margin:10px;
+	box-shadow:3px 3px 5px;
+	background:#EEEEEE;
+	
+}
+
+#second{
+	width:60px;
+	height:20px;
+	font-size:12px;
+	background:#ddaa99;
+}
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//#first의 모든 동생중에 div테그 변경하기
+		$("#first ~ div").css("border","5px dotted #EA9")
+	})
+</script>
+</head>
+<body>
+	<h2>매물안내</h2>
+	<h4>거래완료된 매물 정보는 완료 목록을 참고하시길 바랍니다.</h4>
+	
+	<div>
+		급매<br>
+		빌라 33평 방3,욕2
+	</div>
+	<div id="first">
+		매매<br>
+		현대 아파트 27평형 남향
+	</div>
+	<div>
+		임대<br>
+		푸르지오 오피스텔 18평형
+	</div>
+	<div>
+		임대<br>
+		<div id="second">
+		자이 아파트 46평형
+		</div>
+	</div>
+	<p>특별분향 수익형 오피스텔</p>
+</body>
+</html>

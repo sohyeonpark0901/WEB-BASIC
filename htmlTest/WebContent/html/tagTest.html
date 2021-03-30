@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>제목이 들어가요</title>
+
+<style>
+	.common{
+		background-color:skyblue; color : white;
+	}
+	#private{
+		background-color:pink;
+	}
+	
+
+</style>
+
+</head>
+<body>
+<h3> 문단의 제목 </h3>
+<span class="common">공통부분 1</span>
+<span class="common">공통부분 2</span>
+<span class="common">공통부분 3</span>
+<span class="common">공통부분 4</span>
+
+<p id="private">독립속성</p> <!-- 단순히 문단을 나눌때 사용 -->
+<p>안녕하세요. &quot;박소현&quot; 이에요</p>
+<p>이번 과정의&nbsp;교제는 &apos;교제&apos; &lt;html&css&gt; 이에요</p>
+
+<h4>tag를 이용하여 보여지는 내용들</h4>
+<pre>
+	입력한 내용(줄바꿈 등)이 
+	화면이 보여진다.
+</pre>
+<pre>
+	자바스크립트 함수를 문자열 그대로 출력1
+	function test(){ <!-- 자바스크립트 테그는 pre 테그를 사용하지않고 code를 사용함 출력은 똑같이 되긴함  -->
+		alert("함수가 그대로 출력")
+	}
+	
+</pre>
+<code>
+	자바스크립트 함수를 문자열 그대로 출력2
+	function test(){
+		alert("함수가 그대로 출력")
+	}
+	
+</code>
+
+<hr></hr> <!-- 구분선 -->
+<blockquote><!-- 인용문구  -->
+	<!-- 약어표시 -->
+	<abbr title ="Internet of things"><mark>IOT</mark></abbr>란 인터넷을 기반으로 모든 사물을 연결하여 정보를 상호소통하는 지능형 기술 및 서비스 <!-- 자동 들여쓰기가 됨 -->
+</blockquote>
+<hr></hr>
+<strong>의미있는 글자</strong>를 굵게 할때는 &lt;strong&gt;
+<b>단순글자를 굵게 할때는</b> &lt;b&gt;
+<em>의미있는 글자</em>를 비스듬히 할때는 &lt;em&gt;
+<i>단순글자를</i>굵게 할때 &lt;i&gt;
+
+
+
+</body>
+</html>

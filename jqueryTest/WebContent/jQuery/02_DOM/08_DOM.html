@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	var arr = new Array();
+	//부모
+	$("#melon").parent().each(function(i,e){
+		//arr.push(i+""+e.tagName+""+$(e).text())
+	});
+	//alert(arr);
+	
+	//조상
+	$("#melon").parents().each(function(i,e){
+		arr.push(i+""+e.tagName+""+$(e).text())
+	});
+	alert(arr);
+	
+});
+</script>
+</head>
+<body>
+	<div>사과</div>
+	
+	<div id="first">
+		<span>바나나</span>
+		<span id="strawberry">딸기</span>
+		<div>
+			<span>수박</span>
+			<span id="melon">멜론</span>
+		</div>
+		<div>
+			<b>아메리카노</b>
+		</div>
+	</div>
+	
+</body>
+</html>

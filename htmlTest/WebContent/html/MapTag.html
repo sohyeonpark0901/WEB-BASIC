@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- map!!
+	- 하나의 이미지에 여러개의 link
+	- alt  - text -> area 대체 택스트
+	- coords - x1, y1, x2, y2 (좌표)
+	- href - url -> area(영역) 링크
+	- shape - 영역 모양 
+	
+	** img 요소의 usemap과 map 요소의 name 이름은 동일 해야한다.
+  -->
+	<img src="/htmlTest/img/logo.png" usemap="#logo">
+	<map name="logo">
+		<area shape = "rect" href="http://www.google.com"
+		coords="1,1,451,192" target="_blank">
+		<area shape = "rect" href="http://www.naver.com"
+		coords="452,1,902,192" target="_blank">
+	</map>
+</body>
+</html>

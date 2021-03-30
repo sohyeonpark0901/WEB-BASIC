@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+//DOM : 생성 삭제 삽입 수정 (Document Object Model)
+
+
+$(function(){
+	//맨 아래 붙는다
+	$("#first > p").append("안녕하세요 복제");
+	$("#first>p").append("<h1>안녕하세요 복제</h1>");
+	
+	//맨 위에 붙는다
+	$("#first>p").prepend("<h1>안녕하세요 맨 앞으로 복제</h1>");
+	
+	//<ul>테그의 동생으로 붙는다.
+	$("#first > ul").after("<김동인씨 결석>");
+	//ul테그의 형으로 붙는다
+	$("#first > ul").before("<강사 : 이재현 연구원>");
+	
+	$("<h1>안녕하세요 복제1</h1>").appendTo("first>p")
+	$("<h1>안녕하세요 복제2</h1>").prependTo("first>p")
+	$("<김동인씨 결석!!!!!!!!!>").insertAfter("#first > ul");
+	$("<김동인씨 결석!!!!!!!!!>").insertBefore("#first > ul");
+	
+})
+</script>
+</head>
+<body>
+	<div id="fruit">
+		안녕하세요<br>
+		<p>
+		KITRI 5강의장 보안개발 과정
+		총원 8명 결석 1명 현재원 7명 <br>
+		결석사유:개인사유
+		</p>
+		<b>출결현황</b>
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+		
+	</div>
+	<div id="second"></div>
+	<div id="third"></div>
+</body>
+</html>

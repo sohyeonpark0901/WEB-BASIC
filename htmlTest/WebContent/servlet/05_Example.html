@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="http://localhost:8081/htmlTest/com/java/servlet/Example05" method="get" onsubmit="return check(this)">
+		<label>수</label>
+		<input type="text" name="num1">
+		<br><br>
+		<label>부호</label>
+		<input type="text" name="buho">
+		<br><br>
+		<label>수</label>
+		<input type="text" name="num2">
+		<br><br>
+		<input type="submit" value="전송">
+		<input type="reset" value="취소">
+		
+	</form>
+</body>
+
+<script type="text/javascript">
+function check(obj){
+	if(obj.buho.value!="+"&&obj.buho.value!="*"&&obj.buho.value!="/"&&obj.buho.value!="-"){
+		alert("부호 다시 입력하세요");
+		return false;
+	}
+	if(obj.num2.value=="0" &&obj.buho.value=="/"){
+		alert("0을 입력할 수 없습니다.");
+		return false;
+	}
+	
+}
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("button").click(function(){
+		$("img").eq(1).toggle(5000,function(){
+			alert("OK");
+		})
+		
+	});
+});
+</script>
+</head>
+<body>
+	<img src="../food.PNG" width="300" height="300">
+	<button>Toogle</button>
+	<br><br>
+	
+	<img src="../nature1.PNG" width="300" height="300" style="display:none">
+</body>
+</html>

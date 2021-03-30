@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type ="text/javascript">
+	document.write("날씨가 참 좋네요1");
+	var num = 10;
+	var value = 23.5;
+	var sum = num + value;
+	var str = "자바스크립트";
+	document.write("<p style='color:blue;'>"+sum+"</p>");
+	document.write("<p>"+str+"</p>");
+	
+	debugger;
+	
+	if(num>20){
+		document.write("<h3> 20보다 큰 수 입니다.</h3>");
+	}else if (num>30){
+		document.write("<h3> 30보다 큰 수 입니다.</h3>");
+	}else{
+		document.write("<h3>기타등등 </h3>");
+		//java의 경우 객체를 불러올 때 new 라는 키워드로 객체를 발생시켰음
+		//web에서 document 내장객체를 사용할 떄는 new 가 필요없다.
+	}
+	
+	for (var i=0;i<10;i++){
+		document.write("<div> 반복문 입니다."+i+" 번쨰 </div>");
+	}
+</script>
+</head>
+
+<body>
+ 
+</body>
+</html>

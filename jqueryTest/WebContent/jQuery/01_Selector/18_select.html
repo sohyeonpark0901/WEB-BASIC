@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+
+$(function () {
+   
+   var fruit=$("select>option:selected").val();
+   alert(fruit);   
+   
+   var subject=$("input[name=subject]:checked").val();
+   alert(subject);
+   
+   $("#testChange").change(function() {
+      if($(this).val()=="사과"){
+         alert($(this).val());
+      }else if($(this).val()=="수박"){
+         alert($(this).val());
+      }else if($(this).val()=="딸기"){
+         alert($(this).val());
+      }else if($(this).val()=="포도"){
+         alert($(this).val());
+      }
+   })
+   
+});
+</script>
+
+</head>
+<body>
+      <select id="testChange">
+         <option>사과</option>
+         <option>수박</option>
+         <option selected="selected">딸기</option>
+         <option>포도</option>
+      </select>
+<hr>
+
+      <input type="checkbox" name="subject" value="java">java<br>
+      <input type="checkbox" name="subject" value="jsp">jsp<br>
+      <input type="checkbox" name="subject" value="jquery" checked="checked">jquery<br>
+</body>
+</html>

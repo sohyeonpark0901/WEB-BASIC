@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			url:"01_JSON.txt",
+			type:"GET",
+			dataType:"json",
+			success: function(data) {
+				var memberList = data.member;
+				
+				$(memberList).each(function(i){
+					var member = memberList[i];
+					var html="<span>"+member.stdNumber+"</span> &nbsp;&nbsp;";
+					html+="<span>"+member.stdName+"</span> &nbsp;&nbsp;";
+					html+="<span>"+member.score+"</span> &nbsp;&nbsp;";
+					
+					$("#resultDisplay").append(html);
+				});
+			}
+		});
+	})
+</script>
+</head>
+<body>
+	<div id="resultDisplay"></div>
+</body>
+</html>

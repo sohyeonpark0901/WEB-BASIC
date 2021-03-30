@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="07_form.js"> </script>
+</head>
+<body>
+	<form id="url" action="https://www.naver.com" method="get" onsubmit="return checkForm(this)">
+		<label>이름을 입력하세요</label>
+		<input type="text" name="irum">
+		<br><br>
+		<label>이동할 사이트</label>
+		<select name="siteURL">
+			<option value="">------------</option>
+			<option value="https://www.naver.com">네이버</option>
+			<option value="https://www.daum.net">다음</option>
+			<option value="https://www.google.com">구글</option>
+		</select>
+		<br><br>
+		<label>좋아하는 과일을 선택하세요</label>
+			<input type="radio" name="fruit" value="바나나">바나나
+			<input type="radio" name="fruit" value="사과">사과
+			<input type="radio" name="fruit" value="파인애플">파인애플
+			<input type="radio" name="fruit" value="딸기">딸기
+		<br><br>
+		<label>관심사를 선택하세요</label>
+			<input type="radio" name="interest" value="경제">경제
+			<input type="radio" name="interest" value="사회">사회
+			<input type="radio" name="interest" value="IT">IT
+			<input type="radio" name="interest" value="미술">미술
+		<br><br>
+		<input type="submit" value="전송"> 
+		<input type="reset" value="취소"> 
+	</form>
+</body>
+</html>

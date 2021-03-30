@@ -1,0 +1,15 @@
+@charset "UTF-8";
+div,span{
+		font-size:25px;
+		color:red;
+		
+	}
+	p{
+		font-size:200%;
+	}
+	#one> .menu{
+		color:red;
+	}
+	#one  #three{
+		color:skyblue;
+	}

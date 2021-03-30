@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+<div class="container" align="center">
+	<div class="col-lg-6">
+		<h1>온라인 설문조사 만들기</h1>
+		<form>
+			<div class="form-group" align="left">
+				<label>질문:</label>
+				<input type="text" class="form-control" placeholder="질문제목 입력..">
+			</div>
+			
+			<div class="form-group" align="left" id="answerDiv">
+				<label>답변:
+				<input type="button" value="항목추가" id="appendBtn" class="btn btn-warning">
+				</label>
+				<input type="text" class="form-control" placeholder="답변항목 입력..">
+			</div>
+			
+			<div class="form-group" align="left">
+				<input type="submit" value="설문 만들기" class="btn btn-primary">
+				<input type="reset" value="초기화" class="btn btn-danger">
+			</div>
+		</form>
+	</div>
+	
+	
+</div>
+<script type="text/javascript">
+	// 함수 표현식 = 익명함수
+	document.getElementById("appendBtn").onclick= function(){
+		
+		//input 테그를 담은 변수 생성
+		var inputE1 = document.createElement("input"); //<input>
+		inputE1.setAttribute("type","text"); //<input type=text>
+		inputE1.setAttribute("class","form-control");
+		inputE1.setAttribute("name","answer");
+		
+		//삭제 버튼 담은 변수 생성
+		var delBtn = document.createElement("input");
+		delBtn.setAttribute("type","button");
+		delBtn.setAttribute("value","X");
+		delBtn.setAttribute("onclick","deleteAnswer(this)")
+		
+		//input 테그와 삭제 버튼을 감싸는 div를 생성
+		var div = document.createElement("div");
+		div.appendChild(inputE1);
+		div.appendChild(delBtn);
+		
+		//모든 그룹을 모아놓은 div를 답변에 해당하는(answerDiv)자식 생성
+		var answerDiv = document.getElementById("answerDiv");
+		answerDiv.appendChild(div);
+	}
+	//함수 선언문
+	function deleteAnswer(obj){
+		
+		//부모 div를 담는 변수
+		var answerDiv = document.getElementById("answerDiv");
+		//변수의 선택된 자식을 지우겠다
+		answerDiv.removeChild(obj.parentElement);
+	}
+
+</script>
+
+</body>
+</html>

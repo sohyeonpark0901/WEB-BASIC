@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			url:"02_str.txt",
+			type:"GET",
+			dataType:"text",
+			success:function(data,textStatus,jqXHR){
+				alert(textStatus+" "+jqXHR)
+				$("#resultDisplay").text(data);
+			},
+			error:function(jqXHR,textStatus,errorThrwon){
+				var arr = new Array();
+				arr.push(jqXHR);
+				arr.push(textStatus);
+				arr.push(errorThrwon);
+				arr.push("\n");
+			},
+			
+		})
+	})
+</script>
+</head>
+<body>
+	<div id="resultDisplay"></div>
+</body>
+</html>

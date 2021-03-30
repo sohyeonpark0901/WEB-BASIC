@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   .wrapper{
+      width:800px;
+      margin: auto;
+      
+      background-color:skyblue;
+   }
+   .main{
+      margin-top:10px;
+      background-color:lightgrey;
+   }
+   .left{
+      height:500px;
+      width:200px;
+      background-color:#ff0000;
+      color:white;
+      font-size:40px;
+      text-align: left;
+      margin-right:10px;
+      float:left;     
+      /*float는 정렬, div에서 영역을 잡아놓으면 항상 float를 해야한다.*/
+   }
+   .f{
+   
+   }
+   .right{
+      height:500px;
+      width:590px;
+      background-color:green;
+      color:white;
+      font-size:40px;
+      text-align: right;
+      float:left;
+   }
+   .clear{
+      clear:both;
+      /*정렬을 초기화하는 속성, 새로운 영역으로 개행을 시켜준다고 생각*/
+   }
+   .footer{
+      height:100px;
+      margin-top:10px;
+      background-color: yellow;
+      font-size:40px;
+      text-align:center;
+   }
+</style>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="main">
+         <div class="left">
+            Left
+            <div class="f">
+               <a>naver</a> 
+               <a>google</a> 
+               <a>daum</a>
+            </div>
+         </div>
+         <div class="right">Right</div>
+      </div>
+         <div class="clear"></div>
+         <div class="footer">Footer</div>
+   </div>
+   
+<!--id보다는 class를 이용한다 / id를 통해 데이터를 받아오고 class를 이용하여 만든다. (중복으로인해)-->
+</body>
+</html>

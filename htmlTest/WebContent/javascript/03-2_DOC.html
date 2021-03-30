@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.col{
+	font-size:20px;
+	color: red;
+	
+	}
+</style>
+</head>
+<body>
+	<span id="content1">content1</span>
+	<div>content2</div>
+	<span name="content3">content3</span>
+	<div class="content4">content4</div>
+	
+	<div id="div1">div1입니다</div>
+	<div id="div2">div2입니다</div>
+	<div id="div3">div3입니다</div>
+	
+	
+	<script type="text/javascript">
+		console.log(document.getElementById("content1"));
+		console.log(document.getElementsByTagName("div"));
+		console.log(document.getElementsByClassName("content4"));
+		
+		var div1 = document.getElementById("div1");
+		div1.style.color="cyan";
+		var div2 = document.getElementById("div2");
+		div2.setAttribute("class","col")
+	</script>
+</body>
+</html>

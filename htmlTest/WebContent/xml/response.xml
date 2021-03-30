@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<member>
+	<student>
+		<stdNumber>1</stdNumber>
+		<stdName>박소현</stdName>
+		<score>100</score>
+	</student>
+	<student>
+		<stdNumber>2</stdNumber>
+		<stdName>정고운</stdName>
+		<score>90</score>
+	</student>
+	<student>
+		<stdNumber>3</stdNumber>
+		<stdName>황주환</stdName>
+		<score>80</score>
+	</student>
+</member>

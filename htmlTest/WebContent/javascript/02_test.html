@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	//시계 구현
+	window.onload = function(){
+		//setInterval 1초마다 현재시간이 업데이트 되도록 새로고침
+		setInterval(showTime,1000);
+	}
+	function showTime(){
+		//html  값 가져오는 변수
+		var view = document.getElementById("view");
+		//날짜를 받아오는 함수
+		var date = new Date();
+		//toLocaleTimeString()< 험수를 호출하면 현재시간 return
+		view.innerHTML = date.toLocaleTimeString();
+	}
+</script>
+
+	현재시간 :<span id="view" ></span>
+</body>
+</html>

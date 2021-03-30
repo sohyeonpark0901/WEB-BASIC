@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.spotlight{
+		background-color:yellow;
+	}
+	.redtext{
+		color:red;
+	}
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function (){
+		$("#first").addClass("spotlight");
+		$("#second").addClass("redtext");
+		$("#third").addClass("spotlight redtext");
+		
+		var arr = new Array();
+		
+		arr.push($("#first").text());
+		arr.push($("#second").text());
+		arr.push($("#third").text());
+		
+		alert(arr);
+	})
+</script>
+</head>
+<body>
+	<div id="first">사과</div>
+	<div id="second">바나나</div>
+	<div id="third">딸기</div>
+</body>
+</html>

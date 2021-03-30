@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"  src="../jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("button").eq(0).click(function(){
+		$("img").eq(0).hide();
+		$("button").eq(0).css("display","none");
+		alert("음식 숨김");
+	})
+	$("button").eq(1).click(function(){
+		$("img").eq(0).show();
+		$("button").eq(0).css("display","inline-block");
+		alert("보여주기");
+	})
+	$("button").eq(2).click(function(){
+		$("img").eq(1).hide('slow');
+		$("button").eq(2).hide('5000');
+		
+		alert("자연 숨김");
+	})
+	$("button").eq(3).click(function(){
+		$("img").eq(1).show('fast');
+		$("button").eq(2).show('1000');
+		alert("보여주기");
+	})
+});
+</script>
+</head>
+<body>
+	<img src="../food.PNG" width="300" height="300">
+		<button>HIDE</button>
+		<button>SHOW</button>
+		<br><br>
+	<img src="../nature1.PNG" width="300" height="300">
+		<button>TIME-HIDE</button>
+		<button>TIME-SHOW</button>
+		<br><br>
+</body>
+</html>

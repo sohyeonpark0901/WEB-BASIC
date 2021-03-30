@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("p:even").css("color","red")//짝수 선택 (0포함)
+		$("p:first").css("color","blue");
+		$("p:last").css("color","pink");
+		$("p:eq(2)").css("color","yellow");//index값 eq로 나타낸다 0부터 시작
+		
+		//class가 first인 테그의 자식 중에 짝수번째 li blue색상으로 글자색 변경
+		$(".first > li:even").css("color","blue");
+		
+		//class가 first인 테그의 자식 중에 홀수번째 li red색상으로 글자색 변경
+		$(".first > li:odd").css("color","red");
+		//class가 second인 테그의 자식 중 첫번째 li의 색상을 red
+		$(".second > li:first").css("color","red");
+		
+		//class가 second인 테그의 자식 중 인덱스가 2인 li의 색상을 yellow
+		$(".second > li:eq(2)").css("color","yellow");
+		
+		//class가 third인 테그의 자식중 인덱스가 2보다 큰 li 테그
+		$(".third > li:gt").css("color","red")
+		
+		//class가 third인 테그의 자식중 인덱스가 2보다 작은 li 테그
+		$(".third > li:lt").css("color","green")
+		
+		//class가 third인 테그의 자식중 인덱스가 2가 아닌 li 테그
+		$(".third > li:not(:eq(2))").css("font-size","30px")
+	})
+</script>
+<body>
+	<p>1월</p>
+	<p>2월</p>
+	<p>3월</p>
+	<p>4월</p>
+	<p>5월</p>
+	<p>6월</p>
+	<p>7월</p>
+	<p>8월</p>
+	<p>9월</p>
+	<p>10월</p>
+	<p>11월</p>
+	<p>12월</p>
+	
+	<br><br>
+	
+	<div>
+		<ul class="first">
+			<li>사과</li>
+			<li>바나나</li>
+			<li>딸기</li>
+			<li>메론</li>
+		</ul>
+	</div>
+	
+	<div>
+		<ul class="second">
+			<li>짜장</li>
+			<li>짬뽕</li>
+			<li>탕수육</li>
+			<li>볶음밥</li>
+		</ul>
+	</div>
+	
+	<div>
+		<ul class="third">
+			<li>커피</li>
+			<li>환타</li>
+			<li>콜라</li>
+			<li>사이다</li>
+		</ul>
+	</div>
+</body>
+</html>

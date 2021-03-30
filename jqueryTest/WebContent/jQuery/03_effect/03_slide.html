@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#SlideUp").click(function(){
+			$("div").slideUp(1000);
+		});
+		$("#SlideDown").click(function(){
+			$("div").slideDown(5000);
+		});
+		$("#SlideToggle").click(function(){
+			$("div").slideToggle(7000);
+			$("#slideToggle").text("내리기");
+		});
+		
+	});
+</script>
+<style>
+div{
+		background:green;
+		margin:3px;
+		width:80px;
+		height:40px;
+		float:left;
+	}
+</style>
+</head>
+<body>
+	<button id="SlideUp">Slide Up</button>
+	<button id="SlideDown">Slide Down</button>
+	<button id="SlideToggle">Slide Toggle</button>
+	<br><br>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	
+</body> 
+	
+</html>

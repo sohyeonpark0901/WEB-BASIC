@@ -1,0 +1,19 @@
+{
+	"name": "홍길동",
+	"age" : "30",
+	"cars" : [
+		
+		{
+			"name" : "Ford",
+			"model" : [ "Fiesta", "Focus", "Mustang" ]
+		},
+		{
+			"name" : "BMW",
+			"model" : ["320", "x3","x5"]
+		},
+		{
+			"name" : "hyundai",
+			"model" : ["sonata", "santafe","avante"]
+		}
+	]
+}

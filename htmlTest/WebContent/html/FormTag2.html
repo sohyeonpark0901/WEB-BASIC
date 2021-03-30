@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>select box</h3>
+	선호채널
+	<select id="channel" name="channel" size="5" >
+		<option value="KBS">SBS</option>
+		<option value="KBS">KBS</option>
+		<option value="MBC">MBC</option>
+		<option value="JDBC">JDBC</option>
+		<option value="TVN" selected="selected">TVN</option>
+		<option value="YTN">YTN</option>
+	</select>
+	<select id="channel" name="channel" size="5" >
+		<optgroup label="지상파">
+			<option value="KBS">SBS</option>
+			<option value="KBS">KBS</option>
+			<option value="MBC">MBC</option>
+		</optgroup>
+		<optgroup label="종합편성채널">
+			<option value="JDBC">JDBC</option>
+			<option value="TVN" selected="selected">TVN</option>
+			<option value="YTN">YTN</option>
+		</optgroup>
+	</select>
+	
+	<h3>datalist</h3>
+	<span>응원팀</span>
+	<input type="text" id="bbteam" list="teamlist">
+		<datalist id="teamlist">
+			<option value="NC" label="NC"/>
+			<option value="KIO" label="KIO"/>
+			<option value="KIA" label="KIA"/>
+			<option value="sk" label="sk"/>
+			<option value="한화" label="한화"/>
+			<option value="롯데" label="롯데"/>
+		</datalist>
+		<!--  GET/ POST 
+		GET 키와 값으로 이루어져 있다.
+			- 웹브라우저와 주소로 데이터를 전달
+			- 주소표시줄을 통해 직관적으로 불 수 있기 때문에 보안이 필요없는 곳에서 사용
+			- 255자 이내 데이터만 가능하다.
+		POST - 주소표시줄을 통해 노출 x
+			 - 웹브라우저의 헤더 부분에 데이터를 전달
+			 - 보안이 필요한 경우 사용
+		 -->
+		<h3>textarea</h3>
+		<textarea rows="10" cols="50" name="msg"></textarea>
+</body>
+</html>

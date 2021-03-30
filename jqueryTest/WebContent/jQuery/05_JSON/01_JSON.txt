@@ -1,0 +1,7 @@
+{
+	"member":[
+			{"stdNumber":1,"stdName":"박소현","score":95},
+			{"stdNumber":2,"stdName":"정민성","score":55},
+			{"stdNumber":3,"stdName":"황주환","score":75}			
+			]
+}

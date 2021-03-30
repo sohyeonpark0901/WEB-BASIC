@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var url="?!@#$%^"
+	var a = encodeURI(url);
+	var b = decodeURI(a);
+	
+	var c = encodeURIComponent(url);
+	var d = decodeURIComponent(c);
+	
+	document.write("<br>"+a+"<br>"+b+"<br>"+url+"<br>"+c);
+	</script>
+</body>
+</html>
